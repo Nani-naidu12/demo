@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Portal</title>
 
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#2c3e50;
+            color:white;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav{
+            background:#34495e;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        .hero{
+            background:#3498db;
+            color:white;
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        .container{
+            width:90%;
+            margin:auto;
+            padding:20px;
+        }
+
+        .internships{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:8px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .card h3{
+            margin-top:0;
+        }
+
+        button{
+            background:#3498db;
+            border:none;
+            color:white;
+            padding:10px 15px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#2980b9;
+        }
+
+        form{
+            background:white;
+            padding:20px;
+            border-radius:8px;
+        }
+
+        input, textarea{
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+        }
+
+        footer{
+            background:#2c3e50;
+            color:white;
+            text-align:center;
+            padding:10px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Internship Portal</h1>
+    <p>Find and Apply for the Best Internships</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#internships">Internships</a>
+    <a href="#apply">Apply</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Kickstart Your Career</h2>
+    <p>Explore internships in tech, marketing, design and more.</p>
+</section>
+
+<div class="container">
+
+    <h2 id="internships">Available Internships</h2>
+
+    <div class="internships">
+
+        <div class="card">
+            <h3>Web Development Intern</h3>
+            <p>Work with HTML, CSS, JavaScript and build real projects.</p>
+            <button>Apply</button>
+        </div>
+
+        <div class="card">
+            <h3>Data Analyst Intern</h3>
+            <p>Analyze data using Python, SQL and visualization tools.</p>
+            <button>Apply</button>
+        </div>
+
+        <div class="card">
+            <h3>Digital Marketing Intern</h3>
+            <p>Learn SEO, social media marketing and ad campaigns.</p>
+            <button>Apply</button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container">
+
+    <h2 id="apply">Apply for Internship</h2>
+
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>College</label>
+        <input type="text" placeholder="Enter your college">
+
+        <label>Why should we select you?</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+</div>
+
+<footer id="contact">
+    <p>© 2026 Internship Portal | Contact: hr@internshipportal.com</p>
+</footer>
+
+</body>
+</html>
